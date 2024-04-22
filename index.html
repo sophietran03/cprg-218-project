@@ -4,58 +4,150 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photographer</title>
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
   <link rel="stylesheet" type="text/css" href="styles/fonts.css">
   <link rel="stylesheet" type="text/css" href="styles/global.css">
+  <!--Google Fonts-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alice&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
-  <title>Photographer</title>
 </head>
+
 <body>
-  <a href="#" class="logo">SAND HOME</a>
+  <!--Navigation Bar-->
+  <a href="#" class="logo">SANDSTONE HOME</a>
   <nav class="navbar">
     <ul>
-      <li><a href="#">New Arrivals</a></li>
       <li><a href="#">Collections</a></li>
       <li><a href="#">Bedroom</a></li>
       <li><a href="#">Living</a></li>
       <li><a href="#">Dining</a></li>
-      <li><a href="#">SALE</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">FAQs</a></li>
+      <li><a href="#" class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></a></li>
     </ul>
   </nav>
 
+  <!--Hero Section-->
   <section class="container hero-container">
     <div class="hero-image">
       <div class="hero-text">
         <h1>Transform Your Space with Timeless Elegance</h1>
-        <a href="#" class="btn">Shop New Arrivals -> </a>
+        <a href="#" class="btn">Shop New Arrivals <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
   </section>
 
+  <!--Loop Videos Section-->
   <section class="container homepage-container">
     <div class="chair-video">
       <video autoplay muted loop>
         <source src="assets/videos/chair.mp4" type="video/mp4">
       </video>
-      <figcaption>A person hand puts a white pillow on a bamboo wooden chair</figcaption>
       <div class="chair-text">
         <h1>Add a touch of vintage to your living room with our <i>Oak Chair.</i></h1>
-        <a href="#" class="btn">Shop Chairs -></a>
+        <a href="#" class="btn">Shop Chairs <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
     <div class="sofa-video">
       <video autoplay muted loop>
         <source src="assets/videos/sofa.mp4" type="video/mp4">
       </video>
-      <figcaption>A person hand puts a pillow in front of two other pillows on a brown sofa</figcaption>
       <div class="sofa-text">
         <h1><i>The Mahogany Sofa</i>, make your home feel like a warm hug.</h1>
-        <a href="#" class="btn">Shop Sofas -></a>
+        <a href="#" class="btn">Shop Sofas <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </div>
   </section>
 
-</body>
+  <!-- FAQ Section -->
+  <section class="container accordion-container">
+    <h2>Frequently Asked Question</h2>
+    <button class="accordion">What are your delivery options?</button>
+    <div class="panel">
+      <p>We offer various delivery options to suit your needs. Standard delivery typically takes 3-5 business
+         days, while expedited and white-glove delivery options are available for faster service and assembly.</p>
+    </div>
+    <button class="accordion">How can I track my order?</button>
+    <div class="panel">
+      <p>Once your order is processed and shipped, you will receive a tracking number via email. You can use 
+        this tracking number to monitor the status of your delivery online. </p>
+    </div>
+    <button class="accordion">Can I customize my furniture order?</button>
+    <div class="panel">
+      <p>Absolutely! We offer customization options for many of our furniture pieces, including fabric 
+        choices, finishes, and sizing.</p>
+    </div>
+    <button class="accordion">What is your return policy?</button>
+    <div class="panel">
+      <p>We want you to be completely satisfied with your purchase. If for any reason you're not happy with 
+        your furniture, you may return it within 30 days for a full refund or exchange.</p>
+    </div>
+    <button class="accordion">Do you provide warranties for your products?</button>
+    <div class="panel">
+      <p> Yes, we stand behind the quality of our furniture with warranties on most items. Warranties vary by 
+        product and cover manufacturing defects and structural issues. Please refer to the product description 
+        or contact us for warranty details.</p>
+    </div>
+  </section>
 
+  <!--Footer Section-->
+  <section class="footer-container">
+    <div class="footer-content">
+      <a href="#" class="footer-logo">SANDSTONE<br>HOME</a>
+      <p>Elevate Your Living Space.</p>
+
+      <div class="icons">
+        <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+        <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+        <a href="#"><i class='bx bxl-twitter' ></i></a>
+        <a href="#"><i class='bx bxl-pinterest' ></i></a>
+      </div>
+    </div>
+
+    <div class="footer-content">
+      <h3>About Us</h3>
+      <ul>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Our Designers</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-content">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-content">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Use</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-content">
+      <h3>Programs</h3>
+      <ul>
+        <li><a href="#">Trade Program</a></li>
+        <li><a href="#">Contract Program</a></li>
+        <li><a href="#">Ambassador Program</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="footer-copyright">
+    <p>&copy; 2024 Sandstone Home. All rights reserved.</p>
+  </div>
+
+  <!-- JavaScript -->
+  <script defer src="javascript/scripts.js"></script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/323e0dcdd2.js" crossorigin="anonymous"></script>
+</body>
 </html>

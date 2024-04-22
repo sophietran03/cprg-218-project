@@ -1,13 +1,8 @@
-nav {
-  background: #ffffff;
-  height: 30px;
-  width: 100%;
-}
-
+/* Logo */
 a.logo {
+  font-family: 'Alice', sans-serif;
   color: #7e3225;
-  font-size: 35px;
-  font-weight: bold;
+  font-size: 40px;
   line-height: 80px;
   padding: 20px;
   display: block;
@@ -15,6 +10,12 @@ a.logo {
 }
 
 /* Navigation Bar */
+nav {
+  background: #fff;
+  height: 30px;
+  width: 100%;
+}
+
 .navbar ul {
   display: flex;
   justify-content: center;
@@ -28,7 +29,7 @@ a.logo {
 }
 
 .navbar a {
-  color: black;
+  color: #000;
   font-size: 17px;
   position: relative;
 }
@@ -37,13 +38,13 @@ a.logo {
   color: #7e3225;
 }
 
-.navbar a::before {
+.navbar a:not(.cart-icon)::before {
   content: '';
   position: absolute;
   top: 100%;
   left: 0;
   width: 0;
-  height: 1px;
+  height: 2px;
   background: #7e3225;
   transition: 0.4s;
   font-weight: bold;
@@ -51,6 +52,25 @@ a.logo {
 
 .navbar a:hover::before {
   width: 100%;
+}
+
+.navbar a.cart-icon {
+  font-size: 22px;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .navbar li {
+    margin: 0 10px;
+  }
+  
+  .navbar a {
+    font-size: 14px;
+  }
+
+  .navbar a.cart-icon {
+    font-size: 18px;
+  }
 }
 
 /* Hero Section */
@@ -74,13 +94,14 @@ a.logo {
 }
 
 .hero-text {
-  color: white;
+  color: #fff;
   text-align: center;
 }
 
 .btn {
+  font-size: 20px;
   color: #6e4b2b;
-  background: white;
+  background: #fff;
   border: 1px solid #6e4b2b;
   padding: 10px 30px;
   margin-top: 15px;
@@ -91,6 +112,7 @@ a.logo {
   font-weight: bold;
 }
 
+/* Loop Videos Section */
 .homepage-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -114,4 +136,176 @@ a.logo {
 .chair-video video,
 .sofa-video video {
   width: 100%;
+}
+
+@media (max-width: 1120px) {
+  .hero-text h1,
+  .chair-text h1,
+  .sofa-text h1 {
+    font-size: 30px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 10px 30px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 700px) {
+  .homepage-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+/* FAQ Section */
+.accordion-container {
+  background-color: #fff;
+  height: auto;
+}
+
+.accordion-container h2 {
+  text-align: center;
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.accordion {
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #fff;
+  color: #7e3225;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #fff;
+  color: #000;
+  border-bottom: 2px solid #000;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.accordion:after {
+  content: '\02795';
+  font-size: 10px;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+}
+
+/* Footer Section */
+.footer-container {
+  background: #7e3225;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 2rem;
+  padding: 80px 13% 70px;
+}
+
+.footer-logo {
+  font-family: 'Alice', sans-serif;
+  color: white;
+  font-size: 30px;
+  text-align: left;
+}
+
+.footer-content h3 {
+  color: #fff;
+}
+
+.footer-content li {
+  margin-bottom: 15px;;
+}
+
+.footer-content li a {
+  display: block;
+  color: #d6d6d6;
+  font-weight: 400;
+  transition: all 0.4s ease
+}
+
+.footer-content li a:hover {
+  transform: translateY(-3px) translateX(-5px);
+  color: #fff;
+}
+
+.footer-content p {
+  color: #d6d6d6;
+  font-size: 17px;
+  line-height: 30px;
+  margin: 20px 0;
+}
+
+.icons a {
+  display: inline-block;
+  font-size: 30px;
+  color: #d6d6d6;
+  margin-right: 17px;
+  transition: all 0.4s ease;
+}
+
+.icons a:hover {
+  transform: translateY(-5px);
+  color: #fff;
+}
+
+.footer-copyright {
+  background: #7e3225;
+  color: #fff;
+}
+
+.footer-copyright p {
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  clear: both;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 1690px) {
+  .footer-container {
+    padding: 50px 5% 40px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    gap: 2.5rem;
+  }
 }
